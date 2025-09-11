@@ -21,6 +21,7 @@ services:
       ROOMCTRL_INSTANCE_ENDPOINT: ""      # Roomctrl instance URL
       TELEGRAM_BOT_TOKEN: ""              # Optional: Telegram bot token for notifications
       TELEGRAM_CHAT_ID: ""                # Optional: Telegram chat ID to receive messages
+      TELEGRAM_THREAD_ID: ""              # Optional: Telegram thread ID
 ````
 
 ---
