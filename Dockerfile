@@ -13,8 +13,8 @@ COPY src/requirements.txt .
 
 RUN python -m venv /opt/venv \
     && /opt/venv/bin/pip install --no-cache-dir -r requirements.txt \
-    && find /opt/venv/lib/python3.12/site-packages -name "*.pyc" -delete \
-    && find /opt/venv/lib/python3.12/site-packages -name "*.dist-info" -type d -exec rm -rf {} +
+    && find /opt/venv/lib/python3.13/site-packages -name "*.pyc" -delete \
+    && find /opt/venv/lib/python3.13/site-packages -name "*.dist-info" -type d -exec rm -rf {} +
 
 ###########
 # RUNTIME
