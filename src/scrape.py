@@ -200,11 +200,4 @@ if __name__ == "__main__":
             )
             for f in added:
                 send_telegram_message(make_msg_html(f), parse_mode="HTML")
-        if removed:
-            print(f"Removed files: {len(removed)}")
-            for f in removed:
-                print(f" - {f['name']} ({f['date']})")
-            send_telegram_message(f"❌ Verwijderde bestanden: {len(removed)}")
-            for f in removed:
-                send_telegram_message(f" ➖ {f['name']}")
     scraper.save_snapshot(all_files)
