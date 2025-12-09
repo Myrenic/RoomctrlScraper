@@ -1,7 +1,7 @@
 ###########
 # BUILD
 ###########
-FROM python:3.14-alpine@sha256:829edcc737417f9084a154511bde03a50b7996f3746e4c8a6b30a99a9a10648c AS builder
+FROM python:3.14-alpine@sha256:2a77c2640cc80f5506babd027c883abc55f04d44173fd52eeacea9d3b978e811 AS builder
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONFAULTHANDLER=1 \
@@ -19,7 +19,7 @@ RUN python -m venv /opt/venv \
 ###########
 # RUNTIME
 ###########
-FROM python:3.14-alpine@sha256:829edcc737417f9084a154511bde03a50b7996f3746e4c8a6b30a99a9a10648c AS runtime
+FROM python:3.14-alpine@sha256:2a77c2640cc80f5506babd027c883abc55f04d44173fd52eeacea9d3b978e811 AS runtime
 
 ENV PYTHONUNBUFFERED=1
 
