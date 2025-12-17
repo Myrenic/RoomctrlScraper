@@ -25,7 +25,7 @@ ENV PYTHONUNBUFFERED=1
 
 WORKDIR /app
 
-COPY --from=builder /opt/venv/lib/python3.14/site-packages /usr/local/lib/python3.13/site-packages
+COPY --from=builder /opt/venv/lib/python3.14/site-packages /usr/local/lib/python3.14/site-packages
 
 COPY --chown=nobody:nobody src/ .
 
